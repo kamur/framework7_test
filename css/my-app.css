@@ -8,6 +8,12 @@
 }
 .page-content .toolbar:after { display: none; }
 
+.page-content .toolbar a.premium {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 .content-square-buttons .row { margin-bottom: 16px; }
 .content-square-buttons .row:last-child { margin-bottom: 0; }
 .content-square-buttons .row a {
