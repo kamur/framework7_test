@@ -8,6 +8,26 @@
 }
 .page-content .toolbar:after { display: none; }
 
+.content-square-buttons .row { margin-bottom: 16px; }
+.content-square-buttons .row:last-child { margin-bottom: 0; }
+.content-square-buttons .row a {
+  height: 30vw;
+  line-height: 1.5;
+  white-space: normal;
+}
+.content-square-buttons .row a:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+.content-square-buttons .row a span {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
 /*.page-content{ background:#eae9e7; height:100%; overflow:hidden;}
 .page-content ul { font-size:2em; overflow:hidden; list-style: none;}
 .page-content ul li { width:50%; float:left; text-align:center; height:7.2em;}
