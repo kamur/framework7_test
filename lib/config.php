@@ -68,7 +68,7 @@
   define('ONP_UPDATE_FAILED', 119);
 
   // Filename of log to use when none is given to write_log
-  $file_log = $isLocal ? $_SERVER["DOCUMENT_ROOT"]."/log/development.log" : $_SERVER["DOCUMENT_ROOT"]."/log/production.log";
+  $file_log = $isLocal ? $_SERVER["DOCUMENT_ROOT"]."/logs/development.log" : $_SERVER["DOCUMENT_ROOT"]."/logs/production.log";
   define("DEFAULT_LOG", $file_log);
 
   /**
@@ -103,9 +103,9 @@
     if(($time = $_SERVER['REQUEST_TIME']) == '')
       $time = time();
     if(preg_match("/production.log$/", $logfile)){
-      $logfile = $_SERVER["DOCUMENT_ROOT"]."/log/production-".date("d-m-Y", $time).".log";
+      $logfile = $_SERVER["DOCUMENT_ROOT"]."/logs/production-".date("d-m-Y", $time).".log";
     } else if(preg_match("/development.log$/", $logfile)){
-      $logfile = $_SERVER["DOCUMENT_ROOT"]."/log/development-".date("d-m-Y", $time).".log";
+      $logfile = $_SERVER["DOCUMENT_ROOT"]."/logs/development-".date("d-m-Y", $time).".log";
     }
     if(($remote_addr = $_SERVER['REMOTE_ADDR']) == '')
       $remote_addr = "REMOTE_ADDR_UNKNOWN";
