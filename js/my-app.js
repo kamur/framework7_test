@@ -16,6 +16,56 @@ var mainView = app.views.create('.view-main', {
   // dynamicNavbar: true
 });
 
+// Login
+function login(data){
+  app.request.post('/actions/login', data, function(msg, status, xhr){
+    if(msg == "error")
+      alert("I dati inseriti non sono corretti. Riprova.");
+    else if(msg == "error2")
+      alert("Si è verificato un errore durante il login. Riprova.");
+    else{
+      var link = msg.split("§");
+      if(link[1] != "0000")
+        document.cookie = "uid="+link[1];
+      window.location = '/'+link[0];
+    }
+  });
+}
+
+$$('#login-button').on('click', function(){
+  var email = $$('.login-screen-content [name="email"]').val();
+  var password = $$('.login-screen-content [name="password"]').val();
+  if(email == '') $$('.login-screen-content [name="email"]').trigger('blur')
+  if(password == '') $$('.login-screen-content [name="password"]').trigger('blur')
+  if(email != '' && password != ''){
+    login({email: email, password: password});
+  }
+});
+// End Login
+
+// Register
+function registerNewUser(data){
+  app.request.post('/actions/register', data, function(msg, status, xhr){
+    if(msg.match(/OK$/)){
+      app.loginScreen.close('#my-register-screen');
+      app.dialog.alert("Registrazione avvenuta con successo. Ti è stata inviata una mail per confermare il tuo account.");
+    }
+    else
+      alert(msg);
+  });
+}
+
+$$('#register-button').on('click', function(){
+  var email = $$('#my-register-screen [name="email"]').val();
+  var password = $$('#my-register-screen [name="password"]').val();
+  if(email == '') $$('#my-register-screen [name="email"]').trigger('blur')
+  if(password == '') $$('#my-register-screen [name="password"]').trigger('blur')
+  if(email != '' && password != ''){
+    registerNewUser({email: email, password: password});
+  }
+});
+// End Register
+
 // Callbacks to run specific code for specific pages, for example for Match page:
 $$(document).on('page:init', '.page[data-name="match"]', function (e) {
   var matchStarted = false;

@@ -1,0 +1,778 @@
+[Wed 21 Mar 00:24:22 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521588262
+
+[Wed 21 Mar 00:28:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 00:28:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521588524
+
+[Wed 21 Mar 00:28:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 00:28:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT * FROM users WHERE email='asd@asd.asd' AND password='$5$hYCcrK$OVWcoqZvVZjzcTRDihCdkdlt9N9TS3IO3Ngw8Ot1haB' AND temp = '0'
+
+[Wed 21 Mar 00:31:53 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 00:31:53 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521588713
+
+[Wed 21 Mar 00:31:53 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        array (
+  'REDIRECT_STATUS' => '200',
+  'HTTP_HOST' => 'framework7-test.loc',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'CONTENT_LENGTH' => '32',
+  'HTTP_PRAGMA' => 'no-cache',
+  'HTTP_CACHE_CONTROL' => 'no-cache',
+  'HTTP_ORIGIN' => 'http://framework7-test.loc',
+  'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36',
+  'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+  'HTTP_ACCEPT' => '*/*',
+  'HTTP_REFERER' => 'http://framework7-test.loc/login',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_ACCEPT_LANGUAGE' => 'it,it-IT;q=0.9,en-US;q=0.8,en;q=0.7',
+  'HTTP_COOKIE' => 'uid=undefined',
+  'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+  'SERVER_SIGNATURE' => '',
+  'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) PHP/5.6.8',
+  'SERVER_NAME' => 'framework7-test.loc',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => '/Users/gennarociotola/Sites/framework7_test',
+  'REQUEST_SCHEME' => 'http',
+  'CONTEXT_PREFIX' => '',
+  'CONTEXT_DOCUMENT_ROOT' => '/Users/gennarociotola/Sites/framework7_test',
+  'SERVER_ADMIN' => 'kamur@hotmail.it',
+  'SCRIPT_FILENAME' => '/Users/gennarociotola/Sites/framework7_test/actions/login.php',
+  'REMOTE_PORT' => '55972',
+  'REDIRECT_URL' => '/actions/login',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'POST',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/actions/login',
+  'SCRIPT_NAME' => '/actions/login.php',
+  'PHP_SELF' => '/actions/login.php',
+  'REQUEST_TIME_FLOAT' => 1521588713.575,
+  'REQUEST_TIME' => 1521588713,
+)
+
+[Wed 21 Mar 00:31:53 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 00:31:53 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT * FROM users WHERE email='asd@asd.asd' AND password='$5$hYCcrK$OVWcoqZvVZjzcTRDihCdkdlt9N9TS3IO3Ngw8Ot1haB' AND temp = '0'
+
+[Wed 21 Mar 00:32:10 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 00:32:10 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521588730
+
+[Wed 21 Mar 00:32:10 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        array (
+  'REDIRECT_STATUS' => '200',
+  'HTTP_HOST' => 'framework7-test.loc',
+  'HTTP_CONNECTION' => 'keep-alive',
+  'CONTENT_LENGTH' => '32',
+  'HTTP_PRAGMA' => 'no-cache',
+  'HTTP_CACHE_CONTROL' => 'no-cache',
+  'HTTP_ORIGIN' => 'http://framework7-test.loc',
+  'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest',
+  'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36',
+  'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+  'HTTP_ACCEPT' => '*/*',
+  'HTTP_REFERER' => 'http://framework7-test.loc/login',
+  'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+  'HTTP_ACCEPT_LANGUAGE' => 'it,it-IT;q=0.9,en-US;q=0.8,en;q=0.7',
+  'HTTP_COOKIE' => 'uid=undefined',
+  'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+  'SERVER_SIGNATURE' => '',
+  'SERVER_SOFTWARE' => 'Apache/2.4.28 (Unix) PHP/5.6.8',
+  'SERVER_NAME' => 'framework7-test.loc',
+  'SERVER_ADDR' => '127.0.0.1',
+  'SERVER_PORT' => '80',
+  'REMOTE_ADDR' => '127.0.0.1',
+  'DOCUMENT_ROOT' => '/Users/gennarociotola/Sites/framework7_test',
+  'REQUEST_SCHEME' => 'http',
+  'CONTEXT_PREFIX' => '',
+  'CONTEXT_DOCUMENT_ROOT' => '/Users/gennarociotola/Sites/framework7_test',
+  'SERVER_ADMIN' => 'kamur@hotmail.it',
+  'SCRIPT_FILENAME' => '/Users/gennarociotola/Sites/framework7_test/actions/login.php',
+  'REMOTE_PORT' => '56057',
+  'REDIRECT_URL' => '/actions/login',
+  'GATEWAY_INTERFACE' => 'CGI/1.1',
+  'SERVER_PROTOCOL' => 'HTTP/1.1',
+  'REQUEST_METHOD' => 'POST',
+  'QUERY_STRING' => '',
+  'REQUEST_URI' => '/actions/login',
+  'SCRIPT_NAME' => '/actions/login.php',
+  'PHP_SELF' => '/actions/login.php',
+  'REQUEST_TIME_FLOAT' => 1521588730.497,
+  'REQUEST_TIME' => 1521588730,
+)
+
+[Wed 21 Mar 00:32:10 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 00:32:10 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT * FROM users WHERE email='asd@asd.asd' AND password='$5$hYCcrK$OVWcoqZvVZjzcTRDihCdkdlt9N9TS3IO3Ngw8Ot1haB' AND temp = '0'
+
+[Wed 21 Mar 00:39:50 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 00:39:50 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521589190
+
+[Wed 21 Mar 00:39:50 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 00:39:50 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: asd@asd.asd, password: asd}]
+        SELECT * FROM users WHERE email='asd@asd.asd' AND password='$5$hYCcrK$OVWcoqZvVZjzcTRDihCdkdlt9N9TS3IO3Ngw8Ot1haB' AND temp = '0'
+
+[Wed 21 Mar 01:07:39 2018] [client: 127.0.0.1], [location: /actions/register] [params: {password: lkjhgfdsa}]
+        SELECT email FROM users WHERE email = ''
+
+[Wed 21 Mar 01:09:11 2018] [client: 127.0.0.1], [location: /actions/register] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT email FROM users WHERE email = 'kamur@hotmail.it'
+
+[Wed 21 Mar 01:09:11 2018] [client: 127.0.0.1], [location: /actions/register] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO users (email, password, temp, uid, updated_at, created_at, avatar)
+      VALUES
+      ('kamur@hotmail.it','$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD','1', 'db9fa3ea5be4d236c644487cb3814db7', '2018-03-21 01:09:11', '2018-03-21 01:09:11', 'http://framework7-test.loc/images/avatar-default.jpg')
+
+[Wed 21 Mar 01:09:50 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 01:09:50 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521590990
+
+[Wed 21 Mar 01:09:50 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 01:09:50 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:10:03 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 01:10:03 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591003
+
+[Wed 21 Mar 01:10:03 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 01:10:03 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:10:03 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:10:03 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_date) = '2018-03-21' AND option_type_id =  LIMIT 1
+
+[Wed 21 Mar 01:10:03 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('', '1', '2018-03-21 01:10:03', '2018-03-21 01:10:03')
+
+[Wed 21 Mar 01:11:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 01:11:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591104
+
+[Wed 21 Mar 01:11:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 01:11:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:11:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:11:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_date) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:11:44 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:11:44', '2018-03-21 01:11:44')
+
+[Wed 21 Mar 01:12:04 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 01:12:04 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591124
+
+[Wed 21 Mar 01:12:04 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 01:12:04 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:12:04 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:12:04 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:12:04 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:12:04', '2018-03-21 01:12:04')
+
+[Wed 21 Mar 01:12:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='undefined'
+
+[Wed 21 Mar 01:12:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591165
+
+[Wed 21 Mar 01:12:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = 'undefined' AND S.expired='0'
+
+[Wed 21 Mar 01:12:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:12:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:12:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:12:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:12:45', '2018-03-21 01:12:45')
+
+[Wed 21 Mar 01:12:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 -   - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('51a90279cffc24bc49f5328e66f54bb3', '1', 1521591165)
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='51a90279cffc24bc49f5328e66f54bb3'
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591201
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = '51a90279cffc24bc49f5328e66f54bb3' AND S.expired='0'
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:13:21', '2018-03-21 01:13:21')
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('8764bdfa023a2d124cd57df03be048fa', '1', 1521591201)
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='8764bdfa023a2d124cd57df03be048fa'
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591201
+
+[Wed 21 Mar 01:13:21 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = '8764bdfa023a2d124cd57df03be048fa' AND S.expired='0'
+
+[Wed 21 Mar 01:13:28 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='8764bdfa023a2d124cd57df03be048fa'
+
+[Wed 21 Mar 01:13:28 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591208
+
+[Wed 21 Mar 01:13:28 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = '8764bdfa023a2d124cd57df03be048fa' AND S.expired='0'
+
+[Wed 21 Mar 01:13:29 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='8764bdfa023a2d124cd57df03be048fa'
+
+[Wed 21 Mar 01:13:29 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591209
+
+[Wed 21 Mar 01:13:29 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        SELECT U.* FROM sessions S,users U WHERE S.user_id = U.id AND S.uid = '8764bdfa023a2d124cd57df03be048fa' AND S.expired='0'
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='8764bdfa023a2d124cd57df03be048fa'
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591623
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '8764bdfa023a2d124cd57df03be048fa' AND S.expired='0'
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:20:23', '2018-03-21 01:20:23')
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('0878f03e8f1aac962b9ddeeabc1ab32e', '1', 1521591623)
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='0878f03e8f1aac962b9ddeeabc1ab32e'
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591623
+
+[Wed 21 Mar 01:20:23 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '0878f03e8f1aac962b9ddeeabc1ab32e' AND S.expired='0'
+
+[Wed 21 Mar 01:21:18 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='0878f03e8f1aac962b9ddeeabc1ab32e'
+
+[Wed 21 Mar 01:21:18 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591678
+
+[Wed 21 Mar 01:21:18 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '0878f03e8f1aac962b9ddeeabc1ab32e' AND S.expired='0'
+
+[Wed 21 Mar 01:21:18 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:21:18 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:21:18 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:21:18 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:21:18', '2018-03-21 01:21:18')
+
+[Wed 21 Mar 01:21:18 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('e71bf4fab259c586fb90ada178ff0396', '1', 1521591678)
+
+[Wed 21 Mar 01:21:46 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='e71bf4fab259c586fb90ada178ff0396'
+
+[Wed 21 Mar 01:21:46 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591706
+
+[Wed 21 Mar 01:21:46 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'e71bf4fab259c586fb90ada178ff0396' AND S.expired='0'
+
+[Wed 21 Mar 01:21:46 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:21:46 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:21:46 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:21:46 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:21:46', '2018-03-21 01:21:46')
+
+[Wed 21 Mar 01:21:46 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('4c883f621b6418554e29a382ab23bd36', '1', 1521591706)
+
+[Wed 21 Mar 01:24:09 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='4c883f621b6418554e29a382ab23bd36'
+
+[Wed 21 Mar 01:24:09 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591849
+
+[Wed 21 Mar 01:24:09 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '4c883f621b6418554e29a382ab23bd36' AND S.expired='0'
+
+[Wed 21 Mar 01:24:09 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:24:09 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:24:09 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:24:09 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:24:09', '2018-03-21 01:24:09')
+
+[Wed 21 Mar 01:24:09 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('c625bae3648362b92dfa66f24198ec36', '1', 1521591849)
+
+[Wed 21 Mar 01:26:35 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='c625bae3648362b92dfa66f24198ec36'
+
+[Wed 21 Mar 01:26:35 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521591995
+
+[Wed 21 Mar 01:26:35 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'c625bae3648362b92dfa66f24198ec36' AND S.expired='0'
+
+[Wed 21 Mar 01:26:35 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:26:35 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:26:35 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:26:35 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:26:35', '2018-03-21 01:26:35')
+
+[Wed 21 Mar 01:26:35 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('cd8e234c618a526a7ce4574e689f6e05', '1', 1521591995)
+
+[Wed 21 Mar 01:27:17 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='cd8e234c618a526a7ce4574e689f6e05'
+
+[Wed 21 Mar 01:27:17 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521592037
+
+[Wed 21 Mar 01:27:17 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'cd8e234c618a526a7ce4574e689f6e05' AND S.expired='0'
+
+[Wed 21 Mar 01:27:17 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:27:17 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:27:17 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:27:17 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:27:17', '2018-03-21 01:27:17')
+
+[Wed 21 Mar 01:27:17 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('7c0b03321ac0816eac5ea45fc51da7bc', '1', 1521592037)
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='7c0b03321ac0816eac5ea45fc51da7bc'
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521592085
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '7c0b03321ac0816eac5ea45fc51da7bc' AND S.expired='0'
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:28:05', '2018-03-21 01:28:05')
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('d287ee91ee8ef96ae4c559133afb4ce9', '1', 1521592085)
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='d287ee91ee8ef96ae4c559133afb4ce9'
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521592085
+
+[Wed 21 Mar 01:28:05 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'd287ee91ee8ef96ae4c559133afb4ce9' AND S.expired='0'
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='d287ee91ee8ef96ae4c559133afb4ce9'
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521592119
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'd287ee91ee8ef96ae4c559133afb4ce9' AND S.expired='0'
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:28:39', '2018-03-21 01:28:39')
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('867e085c2b6775d969bc748e92f3a5d9', '1', 1521592119)
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='867e085c2b6775d969bc748e92f3a5d9'
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        DELETE FROM sessions WHERE created_at + 1200 <= 1521592119
+
+[Wed 21 Mar 01:28:39 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '867e085c2b6775d969bc748e92f3a5d9' AND S.expired='0'
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='867e085c2b6775d969bc748e92f3a5d9'
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592185
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '867e085c2b6775d969bc748e92f3a5d9' AND S.expired='0'
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:29:45', '2018-03-21 01:29:45')
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('66c1b4d03443d5319824ce15f9393f83', '1', 1521592185)
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='66c1b4d03443d5319824ce15f9393f83'
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592185
+
+[Wed 21 Mar 01:29:45 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '66c1b4d03443d5319824ce15f9393f83' AND S.expired='0'
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='66c1b4d03443d5319824ce15f9393f83'
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '66c1b4d03443d5319824ce15f9393f83' AND S.expired='0'
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:31:16', '2018-03-21 01:31:16')
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('b84612f6f982a74ac10c5cf2c4f435c5', '1', 1521592276)
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='b84612f6f982a74ac10c5cf2c4f435c5'
+
+[Wed 21 Mar 01:31:16 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'b84612f6f982a74ac10c5cf2c4f435c5' AND S.expired='0'
+
+[Wed 21 Mar 01:33:24 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='b84612f6f982a74ac10c5cf2c4f435c5'
+
+[Wed 21 Mar 01:33:24 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592404
+
+[Wed 21 Mar 01:33:24 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'b84612f6f982a74ac10c5cf2c4f435c5' AND S.expired='0'
+
+[Wed 21 Mar 01:33:24 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:33:24 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:33:24 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:33:24 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:33:24', '2018-03-21 01:33:24')
+
+[Wed 21 Mar 01:33:24 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('32cf22a15b86a74b53897ca6c0fde805', '1', 1521592404)
+
+[Wed 21 Mar 01:35:33 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='32cf22a15b86a74b53897ca6c0fde805'
+
+[Wed 21 Mar 01:35:33 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592533
+
+[Wed 21 Mar 01:35:33 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '32cf22a15b86a74b53897ca6c0fde805' AND S.expired='0'
+
+[Wed 21 Mar 01:35:33 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:35:33 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:35:33 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:35:33 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:35:33', '2018-03-21 01:35:33')
+
+[Wed 21 Mar 01:35:33 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, expire) VALUES ('671ddc745e042261c736486d1af8ddd0', '1', 1521592533)
+
+[Wed 21 Mar 01:36:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='671ddc745e042261c736486d1af8ddd0'
+
+[Wed 21 Mar 01:36:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592599
+
+[Wed 21 Mar 01:36:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '671ddc745e042261c736486d1af8ddd0' AND S.expired='0'
+
+[Wed 21 Mar 01:36:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:36:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:36:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:36:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:36:39', '2018-03-21 01:36:39')
+
+[Wed 21 Mar 01:36:39 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, expired) VALUES ('8b1cd14bae1c403d5d629ee730c47e0c', '1', 1521592599)
+
+[Wed 21 Mar 01:37:00 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='8b1cd14bae1c403d5d629ee730c47e0c'
+
+[Wed 21 Mar 01:37:00 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592620
+
+[Wed 21 Mar 01:37:00 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '8b1cd14bae1c403d5d629ee730c47e0c' AND S.expired='0'
+
+[Wed 21 Mar 01:37:00 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:37:00 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:37:00 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:37:00 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:37:00', '2018-03-21 01:37:00')
+
+[Wed 21 Mar 01:37:00 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('ad56ac68b1fa48a699ceab2d725ebe7b', '1', 1521592620)
+
+[Wed 21 Mar 01:37:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='ad56ac68b1fa48a699ceab2d725ebe7b'
+
+[Wed 21 Mar 01:37:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592643
+
+[Wed 21 Mar 01:37:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'ad56ac68b1fa48a699ceab2d725ebe7b' AND S.expired='0'
+
+[Wed 21 Mar 01:37:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:37:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:37:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:37:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:37:23', '2018-03-21 01:37:23')
+
+[Wed 21 Mar 01:37:23 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('427b16523b05d4705b3afe45412f4c72', '1', 1521592643)
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='ad56ac68b1fa48a699ceab2d725ebe7b'
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592671
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'ad56ac68b1fa48a699ceab2d725ebe7b' AND S.expired='0'
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-21' AND option_type_id = 1 LIMIT 1
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-21 01:37:51', '2018-03-21 01:37:51')
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('8f4c9a2e3f368b15ea380f3511d32b82', '1', 1521592671)
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='8f4c9a2e3f368b15ea380f3511d32b82'
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        UPDATE sessions SET created_at = '1521592671' WHERE uid = '8f4c9a2e3f368b15ea380f3511d32b82'
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592671
+
+[Wed 21 Mar 01:37:51 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '8f4c9a2e3f368b15ea380f3511d32b82' AND S.expired='0'
+
+[Wed 21 Mar 01:37:59 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='8f4c9a2e3f368b15ea380f3511d32b82'
+
+[Wed 21 Mar 01:37:59 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592679
+
+[Wed 21 Mar 01:37:59 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '8f4c9a2e3f368b15ea380f3511d32b82' AND S.expired='0'
+
+[Wed 21 Mar 01:37:59 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='8f4c9a2e3f368b15ea380f3511d32b82'
+
+[Wed 21 Mar 01:37:59 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592679
+
+[Wed 21 Mar 01:37:59 2018] [client: 127.0.0.1], [location: /] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '8f4c9a2e3f368b15ea380f3511d32b82' AND S.expired='0'
+
+[Wed 21 Mar 01:38:05 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='8f4c9a2e3f368b15ea380f3511d32b82'
+
+[Wed 21 Mar 01:38:05 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1521592685
+
+[Wed 21 Mar 01:38:05 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '8f4c9a2e3f368b15ea380f3511d32b82' AND S.expired='0'
+

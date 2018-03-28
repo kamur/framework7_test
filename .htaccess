@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^([^\.]+)$ $1.php [NC,QSA,L]
+</IfModule>
+
+AddType text/x-component .htc
+ErrorDocument 404 /404.php
+
+<IfModule mod_deflate.c>
+  <IfModule mod_setenvif.c>
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+  </IfModule>
+  <IfModule mod_headers.c>
+    Header append Vary User-Agent env=!dont-vary
+  </IfModule>
+  AddOutputFilterByType DEFLATE text/css application/x-javascript text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon
+</IfModule>

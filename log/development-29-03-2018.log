@@ -1,0 +1,37 @@
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT created_at FROM sessions WHERE uid='8f4c9a2e3f368b15ea380f3511d32b82'
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1522276019
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = '8f4c9a2e3f368b15ea380f3511d32b82' AND S.expired='0'
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM users WHERE email='kamur@hotmail.it' AND password='$5$hYCcrK$VkNS2FuCBJvSw90DJMDE9l2RoNrCnQav1ydIZpZ3XsD' AND temp = '0'
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM option_types WHERE name = 'count_user_login' LIMIT 1
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        SELECT * FROM options WHERE DATE(created_at) = '2018-03-29' AND option_type_id = 1 LIMIT 1
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+        INSERT INTO options (option_type_id, option_value, updated_at, created_at) VALUES ('1', '1', '2018-03-29 00:26:59', '2018-03-29 00:26:59')
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /actions/login] [params: {email: kamur@hotmail.it, password: lkjhgfdsa}]
+    User: 1 - kamur@hotmail.it
+        INSERT INTO sessions (uid, user_id, created_at) VALUES ('cb51492f129b3b5386028e25f581b54b', '1', 1522276019)
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT created_at FROM sessions WHERE uid='cb51492f129b3b5386028e25f581b54b'
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        UPDATE sessions SET created_at = '1522276019' WHERE uid = 'cb51492f129b3b5386028e25f581b54b'
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        DELETE FROM sessions WHERE expired + 1200 <= 1522276019
+
+[Thu 29 Mar 00:26:59 2018] [client: 127.0.0.1], [location: /index] [params: {}]
+        SELECT U.* FROM sessions S, users U WHERE S.user_id = U.id AND S.uid = 'cb51492f129b3b5386028e25f581b54b' AND S.expired='0'
+

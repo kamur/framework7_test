@@ -1,3 +1,19 @@
+<?php
+  include_once($_SERVER['DOCUMENT_ROOT']."/lib/config.php");
+  include_once($_SERVER['DOCUMENT_ROOT']."/lib/auth.lib.php");
+
+  global $_CONFIG, $isConnect, $isLocal, $original_user;
+  $isLocal = $_SERVER['SERVER_ADDR']=="127.0.0.1" ? true : false;
+  $auth_status = auth_get_status();
+  if($auth_status[0]==AUTH_LOGGED){
+    list($status, $user) = $auth_status;
+  } else {
+    $status = AUTH_NOT_LOGGED;
+    $user = null;
+  }
+  $isConnect = $status;
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
