@@ -18,7 +18,7 @@ var mainView = app.views.create('.view-main', {
 
 // Login
 function login(data){
-  app.request.post('/actions/login', data, function(msg, status, xhr){
+  app.request.post(window.prefix_url+'/actions/login', data, function(msg, status, xhr){
     if(msg == "error")
       alert("I dati inseriti non sono corretti. Riprova.");
     else if(msg == "error2")
@@ -27,7 +27,7 @@ function login(data){
       var link = msg.split("§");
       if(link[1] != "0000")
         document.cookie = "uid="+link[1];
-      window.location = '/'+link[0];
+      window.location = window.prefix_url+'/'+link[0];
     }
   });
 }
@@ -45,7 +45,7 @@ $$('#login-button').on('click', function(){
 
 // Register
 function registerNewUser(data){
-  app.request.post('/actions/register', data, function(msg, status, xhr){
+  app.request.post(window.prefix_url+'/actions/register', data, function(msg, status, xhr){
     if(msg.match(/OK$/)){
       app.loginScreen.close('#my-register-screen');
       app.dialog.alert("Registrazione avvenuta con successo. Ti è stata inviata una mail per confermare il tuo account.");

@@ -1,6 +1,7 @@
 <?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/lib/config.php");
-  include_once($_SERVER['DOCUMENT_ROOT']."/lib/auth.lib.php");
+  $dr = isset($_SERVER['CONTEXT_DOCUMENT_ROOT']) ? $_SERVER['CONTEXT_DOCUMENT_ROOT'] : $_SERVER['DOCUMENT_ROOT'];
+  include_once($dr."/lib/config.php");
+  include_once($dr."/lib/auth.lib.php");
 
   global $_CONFIG, $isConnect, $isLocal, $original_user;
   $isLocal = $_SERVER['SERVER_ADDR']=="127.0.0.1" ? true : false;
@@ -111,6 +112,9 @@
       </div>
     </div>
 
+    <script type="text/javascript">
+      window.prefix_url = "<?php if(isset($_SERVER['CONTEXT_PREFIX'])) echo $_SERVER['CONTEXT_PREFIX']; ?>";
+    </script>
     <script src="framework7/js/framework7.min.js"></script>
     <script src="js/routes.js"></script>
     <script src="js/my-app.js"></script>

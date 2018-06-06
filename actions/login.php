@@ -1,6 +1,7 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT']."/lib/config.php");
-include_once($_SERVER['DOCUMENT_ROOT']."/lib/auth.lib.php");
+$dr = isset($_SERVER['CONTEXT_DOCUMENT_ROOT']) ? $_SERVER['CONTEXT_DOCUMENT_ROOT'] : $_SERVER['DOCUMENT_ROOT'];
+include_once($dr."/lib/config.php");
+include_once($dr."/lib/auth.lib.php");
 
 list($status, $user) = auth_get_status();
 
