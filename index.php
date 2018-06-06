@@ -27,7 +27,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
-    <title>My App</title>
+    <title>Scout</title>
     <link rel="stylesheet" href="framework7/css/framework7.min.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/my-app.css">
@@ -61,7 +61,7 @@
           <!-- Top Navbar -->
           <div class="navbar">
             <div class="navbar-inner">
-              <div class="title sliding">My App</div>
+              <div class="title sliding">Scout!</div>
               <div class="right">
                 <a href="#" class="link icon-only panel-open" data-panel="right">
                   <i class="icon f7-icons ios-only">menu</i>
