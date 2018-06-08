@@ -16,6 +16,10 @@ routes = [
     url: './pages/settings.html',
   },
   {
+    path: '/settings/informations',
+    url: './pages/informations.php',
+  },
+  {
     path: '(.*)',
     url: './pages/404.html',
   }

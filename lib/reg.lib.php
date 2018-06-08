@@ -5,18 +5,18 @@ include_once($dr."/lib/config.php");
 function reg_register($data){
   //registro l'utente
   global $_CONFIG, $isLocal;
-  $email_control_user = query_db("SELECT email FROM ".$_CONFIG['table_users']." WHERE email = '$_POST[email]'");
+  $email_control_user = query_db("SELECT email FROM ".$_CONFIG['table_users']." WHERE email = '$data[email]'");
   if(mysql_num_rows($email_control_user)){
     echo "L'Email è già utilizzata";
   } else {
-    if(isset($_POST['email']) && isset($_POST['password'])){
+    if(isset($data['email']) && isset($data['password'])){
       $id = reg_get_unique_id();
-      $crypt_pass = crypt(MD5($_POST["password"]),'$5$hYCcrK$');
+      $crypt_pass = crypt(MD5($data["password"]),'$5$hYCcrK$');
       $now = date("Y-m-d H:i:s");
       $default_avatar = $_CONFIG["site_path"]."images/avatar-default.jpg";
       query_db("INSERT INTO ".$_CONFIG['table_users']." (email, password, temp, uid, updated_at, created_at, avatar)
       VALUES
-      ('$_POST[email]','$crypt_pass','1', '$id', '$now', '$now', '$default_avatar')");
+      ('$data[email]','$crypt_pass','1', '$id', '$now', '$now', '$default_avatar')");
       if($user_id = mysql_insert_id()){
         if($isLocal){
           echo "OK";
@@ -33,7 +33,7 @@ function reg_register($data){
 
 function reg_clean_expired(){
   global $_CONFIG;
-  $query = query_db("DELETE FROM ".$_CONFIG['table_users']." WHERE (regdate + ".($_CONFIG['regexpire'] * 60 * 60).") <= ".time()." and temp='1'");
+  $query = query_db("DELETE FROM ".$_CONFIG['table_users']." WHERE (UNIX_TIMESTAMP(STR_TO_DATE(created_at, '%Y-%m-%d %h:%i:%s')) + ".($_CONFIG['regexpire'] * 60 * 60).") <= ".time()." and temp='1'");
 }
 
 function reg_get_unique_id(){
