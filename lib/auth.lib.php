@@ -1,6 +1,6 @@
 <?php
-
-include_once($_SERVER['DOCUMENT_ROOT']."/lib/user.php");
+$dr = isset($_SERVER['CONTEXT_DOCUMENT_ROOT']) ? $_SERVER['CONTEXT_DOCUMENT_ROOT'] : $_SERVER['DOCUMENT_ROOT'];
+include_once($dr."/lib/user.php");
 
 $_AUTH = array("TRANSICTION METHOD" => AUTH_USE_COOKIE);
 
@@ -119,11 +119,14 @@ function auth_register_session($udata){
   global $_CONFIG;
 
   $uid = auth_generate_uid();
+  $now = date("Y-m-d H:i:s");
 
-  query_db("INSERT INTO ".$_CONFIG['table_sessions']." (uid, user_id, created_at) VALUES ('".$uid."', '".$udata['id']."', ".time().")");
+  $query = "INSERT INTO ".$_CONFIG['table_sessions']." (uid, user_id, created_at) VALUES ('".$uid."', '".$udata['id']."', ".time().")";
+  query_db($query);
   if(mysql_insert_id()){
     return array(AUTH_LOGEDD_IN, $uid);
   } else {
+    write_log(mysql_error());
     return array(AUTH_FAILED, NULL);
   }
 }

@@ -26,7 +26,8 @@
   $_CONFIG['expire'] = 1200; //20 minuti in secondi
   $_CONFIG['regexpire'] = 24; //24 ore
 
-  $_CONFIG['skip_check_if_logged'] = array('/actions/login.php', '/actions/register.php');
+  $_CONFIG['prefix_path'] = isset($_SERVER['CONTEXT_PREFIX']) ? $_SERVER['CONTEXT_PREFIX'] : '';
+  $_CONFIG['skip_check_if_logged'] = array($_CONFIG['prefix_path'].'/actions/login.php', $_CONFIG['prefix_path'].'/actions/register.php');
 
   $_CONFIG['check_table_user'] = array(
     "email"=>"check_global",
@@ -67,8 +68,9 @@
   define('AUTH_UPDATE_FAILED', 118);
   define('ONP_UPDATE_FAILED', 119);
 
+  $dr = isset($_SERVER['CONTEXT_DOCUMENT_ROOT']) ? $_SERVER['CONTEXT_DOCUMENT_ROOT'] : $_SERVER['DOCUMENT_ROOT'];
   // Filename of log to use when none is given to write_log
-  $file_log = $isLocal ? $_SERVER["DOCUMENT_ROOT"]."/logs/development.log" : $_SERVER["DOCUMENT_ROOT"]."/logs/production.log";
+  $file_log = $isLocal ? $dr."/logs/development.log" : $dr."/logs/production.log";
   define("DEFAULT_LOG", $file_log);
 
   /**
@@ -102,10 +104,11 @@
     }
     if(($time = $_SERVER['REQUEST_TIME']) == '')
       $time = time();
+    $dr = isset($_SERVER['CONTEXT_DOCUMENT_ROOT']) ? $_SERVER['CONTEXT_DOCUMENT_ROOT'] : $_SERVER['DOCUMENT_ROOT'];
     if(preg_match("/production.log$/", $logfile)){
-      $logfile = $_SERVER["DOCUMENT_ROOT"]."/logs/production-".date("d-m-Y", $time).".log";
+      $logfile = $dr."/logs/production-".date("d-m-Y", $time).".log";
     } else if(preg_match("/development.log$/", $logfile)){
-      $logfile = $_SERVER["DOCUMENT_ROOT"]."/logs/development-".date("d-m-Y", $time).".log";
+      $logfile = $dr."/logs/development-".date("d-m-Y", $time).".log";
     }
     if(($remote_addr = $_SERVER['REMOTE_ADDR']) == '')
       $remote_addr = "REMOTE_ADDR_UNKNOWN";
@@ -134,4 +137,4 @@
     }
   }
 
-  include_once($_SERVER['DOCUMENT_ROOT']."/lib/functions.php");
+  include_once($dr."/lib/functions.php");

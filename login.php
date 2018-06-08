@@ -107,6 +107,9 @@
       </div>
     </div>
 
+    <script type="text/javascript">
+      window.prefix_url = "<?php if(isset($_SERVER['CONTEXT_PREFIX'])) echo $_SERVER['CONTEXT_PREFIX']; ?>";
+    </script>
     <script src="framework7/js/framework7.min.js"></script>
     <script src="js/routes.js"></script>
     <script src="js/my-app.js"></script>
